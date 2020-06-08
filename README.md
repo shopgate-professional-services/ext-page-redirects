@@ -12,7 +12,10 @@ Redirect entry (object):
 ```
 Examples: `/category/:categoryId`, `/item/:productId`, `/category`, `/cart`
 ```
-- `ids (string[])` (optional): Array of Ids for the provided pattern. If omitted it's a wildcard for every Id.
+- `ids (string[])` (optional): Array of Ids for the provided pattern. If omitted it's a wildcard for every Id.  
+The parameters of these pattern(s) (ids) will be auto-decoded:
+    - `/category/:categoryId`
+    - `/item/:productId`
 - `redirect (string)`: Pattern of the redirect route
 - `target (string)`: Redirect target. Use `_blank` to open redirects with `openPageExtern` command (eg. whatsapp, facebook)
 

@@ -42,6 +42,33 @@ Example to redirect a sale category to CMS page and external FB messenger app
  }
 ```
 
+### configEndpoint (string)
+Endpoint URL to fetch the page redirects configuration from. Endpoint should return json in a form like this:
+```json
+{
+  "redirects": [
+    {
+      "pattern": "/category/:categoryId",
+      "ids": [
+        "sale"
+      ],
+      "redirect": "/page/sale"
+    },
+    {
+      "pattern": "/category/:categoryId",
+      "ids": [
+        "134"
+      ],
+      "redirect": "https://m.me/company?context=my%20space%20string",
+      "target": "_blank"
+    }
+  ]
+}
+```
+
+### configTTL (number)
+TTL in seconds for the fetched page redirects config
+
 ## About Shopgate
 
 Shopgate is the leading mobile commerce platform.

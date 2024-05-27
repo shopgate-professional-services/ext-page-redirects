@@ -1,0 +1,10 @@
+{
+  "extends": ["standard"],
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "env": {
+    "node": true
+  }
+}

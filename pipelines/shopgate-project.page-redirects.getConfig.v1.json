@@ -1,0 +1,22 @@
+{
+  "version": "1",
+  "pipeline": {
+    "id": "shopgate-project.page-redirects.getConfig.v1",
+    "public": true,
+    "input": [],
+    "output": [
+      {"key": "config", "id": "1"}
+    ],
+    "steps": [
+      {
+        "type": "extension",
+        "id": "@shopgate-project/page-redirects",
+        "path": "@shopgate-project/page-redirects/getConfig.js",
+        "input": [],
+        "output": [
+          {"key": "config", "id": "1"}
+        ]
+      }
+    ]
+  }
+}

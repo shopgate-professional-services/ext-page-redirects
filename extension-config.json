@@ -30,7 +30,7 @@
         "type": "text",
         "label": "External endpoint (url) to pull page redirects configuration"
       },
-      "default": "https://www.dropbox.com/scl/fi/fvoeeaw48u0cpj1yuu4bp/redirects.json?rlkey=eab5ga5roxvwff5z3r7l1f60j&st=sr8gajob&dl=1"
+      "default": ""
     },
     "configTTL": {
       "type": "admin",

@@ -5,7 +5,6 @@ import { createSelector } from 'reselect';
  * @return {Object}
  */
 export const getConfigState = (state) => {
-  console.log('----state----', state);
   if (!state.extensions['@shopgate-project/page-redirects/config']) {
     return {};
   }

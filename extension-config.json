@@ -25,12 +25,12 @@
     },
     "configEndpoint": {
       "type": "admin",
-      "destination": "backend",
+      "destination": "both",
       "params": {
         "type": "text",
         "label": "External endpoint (url) to pull page redirects configuration"
       },
-      "default": ""
+      "default": null
     },
     "configTTL": {
       "type": "admin",

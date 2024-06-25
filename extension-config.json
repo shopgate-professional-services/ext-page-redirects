@@ -1,11 +1,16 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "id": "@shopgate-project/page-redirects",
   "components": [
     {
       "id": "subscribers",
       "path": "frontend/redirects/subscriptions.js",
       "type": "subscribers"
+    },
+    {
+      "id": "config",
+      "path": "frontend/config/reducers.js",
+      "type": "reducers"
     }
   ],
   "configuration": {
@@ -17,6 +22,24 @@
         "label": "Static configuration for redirects",
         "type": "json"
       }
+    },
+    "configEndpoint": {
+      "type": "admin",
+      "destination": "both",
+      "params": {
+        "type": "text",
+        "label": "External endpoint (url) to pull page redirects configuration"
+      },
+      "default": null
+    },
+    "configTTL": {
+      "type": "admin",
+      "destination": "both",
+      "params": {
+        "type": "text",
+        "label": "TTL (sec) to cache configuration"
+      },
+      "default": 3600
     }
   },
   "steps": []

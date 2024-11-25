@@ -7,12 +7,8 @@
     "lint": "eslint --ext .js --ext .jsx --ext .json ."
   },
   "devDependencies": {
-    "@shopgate/engage": "^6.11.0",
-    "@shopgate/eslint-config": "^6.11.0",
+    "@shopgate/engage": "^6.21.0",
+    "@shopgate/eslint-config": "^6.21.0",
     "eslint": "^6.8.0"
-  },
-  "peerDependencies": {
-    "@shopgate/engage": "^6.11.0",
-    "@shopgate/eslint-config": "^6.11.0"
   }
 }
